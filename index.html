@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="styles.css">
+   <title>Survey Form</title>
+</head>
+
+<body>
+   <h1 id="title">Survey Form</h1>
+   <p id="description">Kindly fill this form. Filling the form means you've read our terms and conditions and agree to them.</p>
+   <form id="survey-form">
+      <label for="name" id="name-label"><p>Tijani Bamidele</p></label>
+      <input type="text" required name="name" id="name" placeholder="Enter Your Name"></input>
+      <label for="name" id="email-label"><p>tijaniemmanuelb@gmail.com</p></label>
+      <input type="email" required name="email" id="email" placeholder="Enter Your Email"></input>
+      <label for="number" id="number-label"><p>08137088334</p></label>
+      <input type="number" min="11" max="11" required name="number" id="number" placeholder="Enter Your Phone Number"></input>
+      <div class="dropdown-div">
+         <p>What is your current skill level?</p>
+         <select required name="dropdown" id="dropdown">
+            <option>Select Your Level</option>
+            <option value"1">Novice</option>
+            <option value="2">Amateur</option>
+            <option value="3">Senior</option>
+            <option value="4">Legend</option>
+            <option value="5">Professional</option>
+         </select></div>
+      </div>
+      <div class="radio-div">
+         <p>Do you find it comfortable studying online?</p>
+         <label class="form-control">
+         <input type="radio" name="radio" id="radio" value="1">Yes</input>
+           <input type="radio" name="radio" id="radio" value="2"></input>No</label>
+           <label <label class="form-control">
+             <input type="radio" name="radio" id="radio" value="3"></input> Maybe</label>
+             <label class="form-control">
+               <input type="radio" name="radio" id="radio" value="4"></input>Prefer not to say</label>
+      </div>
+       <div class="checkbox-div">
+          <p>Which skill did you want to improve on? (Check all that apply)</p>
+          <label class="form-control">
+             <input type="checkbox" id="checkboz" value="1">Frontend Web Development</input>
+             <input type="checkbox" id="checkbox" value="2"></input>Backend Web Development</label>
+          <label <label class="form-control">
+             <input type="checkbox" id="checkbox" value="3"></input>Full stack</label>
+          <label class="form-control">
+             <input type="checkbox" id="checkbox" value="4"></input>C and C++</label>
+             <label class="form-control">
+                <input type="checkbox" id="checkbox" value="4"></input>Phyton</label>
+                <label class="form-control">
+                   <input type="checkbox" id="checkbox" value="4"></input>UI/UX</label>
+       <div class="textarea-id">
+       <p>What would you like to suggest?</p>
+       <textarea name="comment" id="comment-description" cols="40" rows="5">Enter suggestion here...</textarea>
+       </div>
+       <div class="submit-div">
+          <button type="Submit" id="submit">Submit</button>
+       </div>
+   </form>
+   
+</body>
+
+</html>
