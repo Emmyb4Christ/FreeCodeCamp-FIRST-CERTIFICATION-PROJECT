@@ -9,7 +9,6 @@
 body {
    background: linear-gradient(to right, lightblue, darkblue);
    font-family: sans-serif;
-   color: blue;
 }
 
 #title {
@@ -55,10 +54,16 @@ body {
 
 #name, #email, #number {
    border: 0;
-   width: 90%;
-   margin: 0 5px 30px 0;
+   width: 95%;
+   height: 2.9rem;
+   margin: 0 5px 40px 0;
    padding: 10px;
    background-color: rgba(255, 230, 230);
+}
+
+#number,#email,#name::placeholder {
+   color: #7C7B82;
+   font-size: 16px;
 }
 
 #name, #email, #number:hover {
@@ -70,6 +75,11 @@ body {
    outline-width: 0;
 } 
 
+#name-label i {
+   font-size: 16px;
+   color: #4F59C7;
+}
+
 #dropdown {
    appearance: none;
    background-color: rgba(255, 230, 230);
@@ -78,10 +88,21 @@ body {
    margin: 0;
    width: 90%;
    height: 2.3rem;
-   font-family: sans-serif;
    font-size: inherit;
-   cursor: inherit;
+   color: #7C7B82;
+   font-family: sans-serif;
+   padding-left: 12px;
+   font-size: 16px;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   cursor: pointer;
 }
+
+#dropdown-div::option {
+ background: #63626A;
+}
+
 
 #dropdown::-ms-expand {
    display: none;
@@ -93,8 +114,12 @@ body {
    margin-bottom: 15px;
 }
 
+#radio {
+   color: black;
+}
+
 .form-control {
-   margin-top: 15px;
+  margin-top: 15px;
   font-family: sans-serif;
   font-size: 18px;
   line-height: 1.1;
